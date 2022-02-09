@@ -1,0 +1,135 @@
+
+html , body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+        font-style: italic;
+        background-color:#0C2C56 ;
+      
+        color: #FFFFFF;
+        overflow-x: hidden;}
+        
+        #grilla {
+            display: grid;
+            grid-template-areas:
+              
+            "logo header"
+            "nav nav "
+              "impositivo publicidad"
+              "contabilidad publicidad "
+              "footer footer"
+              "nav nav";grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+         }
+         .border {
+            border: 5px solid black;
+         }
+          
+       
+         
+    /* logo*/
+    #logo{
+        grid-area: logo;
+        border-style: dashed;
+    }
+
+    nav {
+        grid-area: nav ;display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content:center;
+        height: 60px;
+        background-color:#0C2C56;
+        text-align: center;
+     } 
+     
+            
+                
+     nav ul{
+         list-style: none;
+         display: inline-block;
+         padding:18px;
+         justify-content: center;
+      }
+      
+      nav ul li{
+          float: left;
+          margin-top: 20px;
+          justify-content: center;
+      }
+      
+      nav ul li a {
+          color: white;
+          font-weight: bold;
+          text-decoration: none;
+          font-size: 20px;
+          padding: 18px;
+          justify-content: center;
+      }
+      
+      nav ul li a:hover{
+        background-color: #929fb3;
+        justify-content:center ;}
+     
+        .social{
+            grid-area: social;
+            display: flex;
+        flex-direction: column;
+        width:48px;
+        position:fixed;
+        top:50px;
+    text-align: right;
+    justify-content: right;} 
+         
+         
+section#impositivo{
+    grid-area: impositivo }
+    section#contablidad
+   { grid-area: contabilidad;}
+
+    .page{
+        display: table;
+        width: 100%
+    }
+    .container {
+        float: left;
+        width: 60%
+    }
+    aside#publicidad
+    
+    {grid-area: publicidad;
+        float: right;
+        width: 40%}
+
+
+                  
+h2{
+ text-align: center;
+ text-decoration: solid
+}
+         
+         
+@media screen and (min-width: 1024px) {
+    #grilla {
+            grid-template-columns: repeat(2, 1fr);
+      }
+      .border {
+        border: 4px solid black;
+        background-color:#0C2C56;
+     }
+}        
+         
+#grilla { display: grid; }
+@media screen and (min-width: 768px) {
+    #grilla {
+            grid-template-columns: repeat(2, 1fr);
+      }
+      .border {
+        border: 4px solid black;
+        background-color:#0C2C56;
+     }
+  
+         
+
+    }
