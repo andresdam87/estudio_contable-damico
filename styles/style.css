@@ -6,6 +6,7 @@ html , body{
     
         font-style: italic;
         background-color:#0C2C56 ;
+        background-image: url(../imagenes/moroccan-flower-dark.png);
       
         color: #FFFFFF;
         overflow-x: hidden;}
@@ -13,20 +14,31 @@ html , body{
         #grilla {
             display: grid;
             grid-template-areas:
+            "logo header header"
+            "nav nav nav"
+            "social social social"
+            "impositivo impositivo aside#publicidad "
+            "contabilidad contabilidad aside#publicidad"
+
+            
+
+            
+            
+            
+
               
-            "logo header"
-            "nav nav "
-              "impositivo publicidad"
-              "contabilidad publicidad "
-              "footer footer"
-              "nav nav";grid-template-rows: repeat(2, 1fr);
-            grid-template-columns: repeat(2, 1fr);
+           ;
+              
+        
+            grid-template-columns: repeat( 50% 50%);
          }
          .border {
-            border: 5px solid black;
+            border: 5px solid blue;
+            border-radius: 1fr;
+            border-style: dashed;
          }
           
-       
+     
          
     /* logo*/
     #logo{
@@ -71,8 +83,8 @@ html , body{
       nav ul li a:hover{
         background-color: #929fb3;
         justify-content:center ;}
-     
-        .social{
+     */ fin nav *
+        .header__social{
             grid-area: social;
             display: flex;
         flex-direction: column;
