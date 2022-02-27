@@ -5,7 +5,7 @@
 }
 
     body{
-      background: -moz-linear-gradient(#6C8DF0,#3A57FA,#4194E6,#20AEFA,#37D3F0);
+      background-image: url(../imagenes/moroccan-flower-dark.png);
         color: 000C11;
         border-style:groove;
         border-color:black;
@@ -17,7 +17,7 @@
     border-style: double;
     border-color: black;
     text-align: center;
-    background: -moz-linear-gradient(#6C8DF0,#3A57FA,#4194E6,#20AEFA,#37D3F0);
+    background-color: #20AEFA;
     
     
     
