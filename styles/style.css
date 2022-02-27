@@ -5,7 +5,11 @@
 }
 
     body{
+<<<<<<< HEAD
     
+=======
+      background-image: url(../imagenes/moroccan-flower-dark.png);
+>>>>>>> animaciones
         color: 000C11;
         border-style:groove;
         border-color:black;
@@ -17,97 +21,97 @@
     border-style: double;
     border-color: black;
     text-align: center;
-    background: -moz-linear-gradient(#6C8DF0,#3A57FA,#4194E6,#20AEFA,#37D3F0);
+    background-color: #20AEFA;
     
     
     
     
       
 
-
-}
-  .nav-link{
-      color: #000C11;
-      border-style: dashed;
-      background: -moz-linear-gradient(#6C8DF0,#3A57FA,#4194E6,#20AEFA,#37D3F0);
   }
-  #logo {
-    transition: all 2.3s ease-in-out;
-  }
-  #logo:hover {
-    transform: rotateY(-360deg);
-  }
-
-  h2 {
-    animation-duration: 2s;
+    .nav-link{
+        color: #000C11;
+        border-style: dashed;
+        background: -moz-linear-gradient(#6C8DF0,#3A57FA,#4194E6,#20AEFA,#37D3F0);
+    }
+    #logo {
+      transition: all 2.3s ease-in-out;
+    }
+    #logo:hover {
+      transform: rotateY(-360deg);
+    }
+  
+    h2 {
+      animation-duration: 2s;
+      animation-name: aparecer;
+      animation-iteration-count: infinite;
+      text-align: center;
+   }
+   h1{animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: infinite;
     text-align: center;
- }
- h1{animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite;
-  text-align: center;
-
- }
- 
- @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  .socialmedia{
-    display: flex;
-        flex-direction: column;
-        width:48px;
-        position:fixed;
-        top:50px;
-    right: 0;
-  list-style: none; 
-  padding-left: 0rem;
-}
- 
- 
-
-    .embed-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-right-width: 2px;
-border-right-style: solid;
-padding-right: 71px;
-margin-right: 68px;
-  }
-  .embed-container iframe {
-      position: absolute;
-      top:0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-  }
   
-p{ text-align: center;
+   }
+   
+   @keyframes aparecer {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .socialmedia{
+      display: flex;
+          flex-direction: column;
+          width:48px;
+          position:fixed;
+          top:50px;
+      right: 0;
+    list-style: none; 
+    padding-left: 0rem;
+  }
+   
+   
   
+      .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-right-width: 2px;
+  border-right-style: solid;
+  padding-right: 71px;
+  margin-right: 68px;
+    }
+    .embed-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+  p{ text-align: center;
+    
+  
+  
+  }
+   .serv{
+     border-style: dashed;
+     text-align: center;
+     border-color: #000C11;
+   }
+   button{ animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    text-align: center;
+  
+   }
+  .boton{
+    text-align: center;
+    ;
+  }
 
-
-}
- .serv{
-   border-style: dashed;
-   text-align: center;
-   border-color: #000C11;
- }
- button{ animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite;
-  text-align: center;
-
- }
-.boton{
-  text-align: center;
-  ;
-}
-
+  
