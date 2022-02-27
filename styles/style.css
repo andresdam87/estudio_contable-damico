@@ -5,11 +5,7 @@
 }
 
     body{
-<<<<<<< HEAD
-    
-=======
       background-image: url(../imagenes/moroccan-flower-dark.png);
->>>>>>> animaciones
         color: 000C11;
         border-style:groove;
         border-color:black;
@@ -21,8 +17,7 @@
     border-style: double;
     border-color: black;
     text-align: center;
-    background-color: #20AEFA;
-    
+    background:-moz-linear-gradient(#6C8DF0,#3A57FA,#4194E6,#20AEFA,#37D3F0)
     
     
     
@@ -32,7 +27,7 @@
     .nav-link{
         color: #000C11;
         border-style: dashed;
-        background: -moz-linear-gradient(#6C8DF0,#3A57FA,#4194E6,#20AEFA,#37D3F0);
+        background:m(#6C8DF0,#3A57FA,#4194E6,#20AEFA,#37D3F0);
     }
     #logo {
       transition: all 2.3s ease-in-out;
