@@ -2,22 +2,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  $estilos: (
+    
+    centro: center,
+   
+  );
+  
+
+  
+
+
 }
 
   body{
-    background: -moz-linear-gradient(#6C8DF0,#3A57FA,#4194E6,#20AEFA,#37D3F0);
-      color: 000C11;
+    background-image: url(../imagenes/moroccan-flower-dark.png);
+      color:  #FDFDFD;
       border-style:groove;
-      border-color:black;
+      border-color:#FDFDFD;
+      @extend .container;
       
-      ;
      
   }
 .container{
-  border-style: double;
+  border-style: groove;
   border-color: black;
-  text-align: center;
-  background: -moz-linear-gradient(#6C8DF0,#3A57FA,#4194E6,#20AEFA,#37D3F0);
+  text-align: map-get($estilos, centro);
+  background:-moz-linear-gradient(#010510,#174578,#193F71,#1C315E,#174873)
   
   
   
@@ -25,15 +36,16 @@
 
 }
   .nav-link{
-      color: #000C11;
-      border-style: dashed;
-      background: -moz-linear-gradient(#6C8DF0,#3A57FA,#4194E6,#20AEFA,#37D3F0);
+      color: #FDFDFD;
+      border-style: dotted;
+      background:(#1C305D,#174578,#193F71,#1C315E,#174873);
   }
   #logo {
     transition: all 2.3s ease-in-out;
   }
   #logo:hover {
     transform: rotateY(-360deg);
+    
   }
 
   h2 {
@@ -45,7 +57,7 @@
  h1{animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: infinite;
-  text-align: center;
+  text-align: map-get($estilos, centro);
 
  }
  
@@ -88,7 +100,7 @@ margin-right: 68px;
       height: 100%;
   }
   
-p{ text-align: center;
+p{ text-align: map-get($estilos, centro);
   
 
 
@@ -96,20 +108,18 @@ p{ text-align: center;
  .serv{
    border-style: dashed;
    text-align: center;
-   border-color: #000C11;
+   border-color: #FDFDFD;
  }
  button{ animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: infinite;
-  text-align: center;
+  text-align: map-get($estilos, centro);
 
  }
 .boton{
-  text-align: center;
+  text-align: map-get($estilos, centro);
   ;
 }
-
-
 
 
 

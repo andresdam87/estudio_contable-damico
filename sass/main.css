@@ -6,28 +6,29 @@
 }
 
 body {
-  background: -moz-linear-gradient(#6C8DF0, #3A57FA, #4194E6, #20AEFA, #37D3F0);
-  color: 000C11;
+  background-image: url(../imagenes/moroccan-flower-dark.png);
+  color: #FDFDFD;
   border-style: groove;
-  border-color: black;
+  border-color: #FDFDFD;
 }
 
 .container {
   border-style: double;
   border-color: black;
   text-align: center;
-  background: -moz-linear-gradient(#6C8DF0, #3A57FA, #4194E6, #20AEFA, #37D3F0);
+  background: -moz-linear-gradient(#010510, #174578, #193F71, #1C315E, #174873);
 }
 
 .nav-link {
-  color: #000C11;
+  color: #FDFDFD;
   border-style: dashed;
-  background: -moz-linear-gradient(#6C8DF0, #3A57FA, #4194E6, #20AEFA, #37D3F0);
+  background: #1C305D, #174578, #193F71, #1C315E, #174873;
 }
 
 #logo {
   -webkit-transition: all 2.3s ease-in-out;
   transition: all 2.3s ease-in-out;
+  
 }
 
 #logo:hover {
@@ -115,7 +116,7 @@ p {
 .serv {
   border-style: dashed;
   text-align: center;
-  border-color: #000C11;
+  border-color: #FDFDFD;
 }
 
 button {
@@ -130,5 +131,12 @@ button {
 
 .boton {
   text-align: center;
+}
+
+div {
+  background: -moz-linear-gradient(#010510, #174578, #193F71, #1C315E, #174873);
+  text-align: center;
+  padding: 1rem;
+  font-size: 35px;
 }
 /*# sourceMappingURL=main.css.map */
