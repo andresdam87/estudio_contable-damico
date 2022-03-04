@@ -18,14 +18,14 @@
   body{
     background-image: url(../imagenes/moroccan-flower-dark.png);
       color:  #FDFDFD;
-      border-style:groove;
+      border-style:double;
       border-color:#FDFDFD;
       @extend .container;
       
      
   }
 .container{
-  border-style: groove;
+  border-style: double;
   border-color: black;
   text-align: map-get($estilos, centro);
   background:-moz-linear-gradient(#010510,#174578,#193F71,#1C315E,#174873)
