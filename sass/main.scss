@@ -8,7 +8,15 @@
     centro: center,
    
   );
-  
+  @mixin flex-row-center{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.box {
+   @include flex-rox-center;
+}
+
 
   
 
@@ -18,10 +26,10 @@
   body{
     background-image: url(../imagenes/moroccan-flower-dark.png);
       color:  #FDFDFD;
-      border-style:double;
+      border-style:groove;
       border-color:#FDFDFD;
-      @extend .container;
       
+      ;
      
   }
 .container{
@@ -32,12 +40,13 @@
   
   
   
+  
     
 
 }
   .nav-link{
       color: #FDFDFD;
-      border-style: dotted;
+      border-style: dashed;
       background:(#1C305D,#174578,#193F71,#1C315E,#174873);
   }
   #logo {
@@ -45,7 +54,6 @@
   }
   #logo:hover {
     transform: rotateY(-360deg);
-    
   }
 
   h2 {
@@ -53,12 +61,13 @@
     animation-name: aparecer;
     animation-iteration-count: infinite;
     text-align: center;
+    @extend .nav-link;
  }
  h1{animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: infinite;
   text-align: map-get($estilos, centro);
-
+  @extend .nav-link;
  }
  
  @keyframes aparecer {
@@ -101,7 +110,8 @@ margin-right: 68px;
   }
   
 p{ text-align: map-get($estilos, centro);
-  
+
+  @extend .nav-link;
 
 
 }
@@ -117,7 +127,7 @@ p{ text-align: map-get($estilos, centro);
 
  }
 .boton{
-  text-align: map-get($estilos, centro);
+  text-align: center;
   ;
 }
 
